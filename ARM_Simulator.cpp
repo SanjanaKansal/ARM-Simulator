@@ -126,6 +126,14 @@ static void Initialize()
     map_opcode_values["r15,"]= fifteen;
 }
 
+/*--------------Handling Exit--------------------*/
+
+void term()
+{
+    cout<<"Some error occured during opening the file. Can't store the instructions.";
+    cout<<" Terminating execution now."<<endl;
+}
+
 /*---------------Opening file here---------------*/
 int file_open(string filename)
 {
@@ -163,8 +171,7 @@ char store_instructions()
         return show;
     }
     else
-    cout<<"Some error occured during opening the file. Can't store the instructions.";
-    cout<<" Terminating execution now."<<endl;
+    
 
 }
 

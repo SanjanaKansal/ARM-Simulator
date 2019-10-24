@@ -7,3 +7,7 @@ str r0 #14
 str r1, [r0, #0]
 str r2, [r0,#1]
 mul r0, r1, #3
+ldr r2, =10
+mov r5 #20
+ADD r0, r1, r2
+str r0 #14
